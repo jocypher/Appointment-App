@@ -1,10 +1,7 @@
-package com.example.appointmentapp
+package com.example.appointmentapp.Activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.core.view.ViewCompat
 import com.example.appointmentapp.databinding.ActivitySplashBinding
 
 class SplashActivity : BaseActivity() {

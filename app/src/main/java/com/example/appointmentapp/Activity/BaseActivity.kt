@@ -1,4 +1,4 @@
-package com.example.appointmentapp
+package com.example.appointmentapp.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
