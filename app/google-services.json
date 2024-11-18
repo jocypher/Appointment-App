@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982855239546",
+    "project_id": "will-appointment-app",
+    "storage_bucket": "will-appointment-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982855239546:android:ea7e6399febf6d4404f8c3",
+        "android_client_info": {
+          "package_name": "com.example.appointmentapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNEM6l_a7NMVgUevY24YaTHFMSFIGe-Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Appointment App</string>
+    <string name="splash_m_text">Consult only with a\n<font color="#1FC29D">Doctor you trust </font> </string>
+    <string name="splash_description">We can help you find avalaible\ndoctor appointment near you</string>
 </resources>
