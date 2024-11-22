@@ -5,12 +5,10 @@ import androidx.lifecycle.ViewModel
 import com.example.appointmentapp.Model.DoctorsModel
 import com.example.appointmentapp.Repository.MainRepository
 
-class MainViewModel:ViewModel() {
+class MainViewModel: ViewModel() {
     private val repository=MainRepository()
-
      fun loadDoctors():LiveData<MutableList<DoctorsModel>>{
         return repository.loadData()
     }
-
 
 }
