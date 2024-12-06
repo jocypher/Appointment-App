@@ -10,14 +10,14 @@ data class DoctorsModel(
     val Picture:String="",
     val Id:Int=0,
     val Special:String="",
-    val Experience:Int=0,
+    val Expriense:Int=0,
     val Cost:String="",
     val Date:String="",
     val Time:String="",
     val Location:String="",
     val Mobile:String="",
-    val Patients:String="",
-    val Ratings:Double=0.0,
+    val Patiens:String="",
+    val Rating:Double=0.0,
     val Site:String=""
 
 ): Parcelable {
@@ -47,14 +47,14 @@ data class DoctorsModel(
         parcel.writeString(Picture)
         parcel.writeInt(Id)
         parcel.writeString(Special)
-        parcel.writeInt(Experience)
+        parcel.writeInt(Expriense)
         parcel.writeString(Cost)
         parcel.writeString(Date)
         parcel.writeString(Time)
         parcel.writeString(Location)
         parcel.writeString(Mobile)
-        parcel.writeString(Patients)
-        parcel.writeDouble(Ratings)
+        parcel.writeString(Patiens)
+        parcel.writeDouble(Rating)
         parcel.writeString(Site)
     }
 

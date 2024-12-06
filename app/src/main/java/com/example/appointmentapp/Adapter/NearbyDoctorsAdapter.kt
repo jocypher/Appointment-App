@@ -1,11 +1,13 @@
 package com.example.appointmentapp.Adapter
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.request.RequestOptions
+import com.example.appointmentapp.Activity.DetailActivity
 import com.example.appointmentapp.Model.DoctorsModel
 import com.example.appointmentapp.databinding.ViewholderNearbyDoctorBinding
 
@@ -24,6 +26,12 @@ class NearbyDoctorsAdapter(private val items:MutableList<DoctorsModel>):Recycler
         holder.binding.nameTxt.text = items[position].Name
         holder.binding.costTxt.text=items[position].Cost
         holder.binding.specialTxt.text=items[position].Special
+
+        holder.binding.root.setOnClickListener {
+            val intent = Intent(context,DetailActivity::class.java)
+            intent.putExtra("object", items[position])
+            context?.startActivity(intent)
+        }
 
         Glide.with(holder.itemView.context).load(items[position].Picture).apply {
             RequestOptions().transform(CenterCrop())

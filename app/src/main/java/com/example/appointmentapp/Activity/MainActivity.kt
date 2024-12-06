@@ -19,8 +19,23 @@ class MainActivity : BaseActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initNearByDoctor()
+       // searchDoctorByName()
 
     }
+
+//    private fun searchDoctorByName() {
+//        binding.searchDoctor.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener{
+//            override fun onQueryTextSubmit(query: String?): Boolean {
+//                return false
+//            }
+//
+//            override fun onQueryTextChange(newText: String?): Boolean {
+//                val filteredList=viewModel.
+//            }
+//
+//        })
+//    }
+
     private  fun initNearByDoctor(){
         binding.apply {
             progressBar.visibility = View.VISIBLE
